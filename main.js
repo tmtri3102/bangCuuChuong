@@ -1,3 +1,9 @@
-let board;
-board = "<table border = '1' cellspacing='0' cellpadding='3'>";
-for (i=0; ;4)
+let c;
+for (let i = 1; i < 10; i++) {
+	c += "<tr>";
+	for (let j = 1; j < 10; j++) {
+		c += `<td>${i} x ${j} = ${i * j}</td>`;
+	}
+	c += "</tr>";
+}
+document.getElementById("content").innerHTML = c;
